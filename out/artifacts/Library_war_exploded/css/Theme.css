@@ -1,0 +1,67 @@
+.background {
+    text-align: center;
+    background: url(/images/background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.bookshelf {
+    width: 1200px;
+    height: 720px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/images/bookshelf.png");
+}
+
+.search {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.hint {
+    margin: auto;
+    width: 480px;
+    height: 360px;
+    color: cadetblue;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.editText {
+    width: 120px;
+    height: 30px;
+    solid-color: transparent;
+    border: inset #9DBFF6 1px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.button {
+    width: 50px;
+    height: 30px;
+    border: outset 2px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.buttonPressed {
+    width: 50px;
+    height: 30px;
+    border: inset 2px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.tab {
+    width: 500px;
+    height: 100px;
+    margin-inside: 50px;
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+    background-color: gray;
+    font-size: 80px;
+}
