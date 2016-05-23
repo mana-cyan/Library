@@ -19,5 +19,7 @@
     <s:text name="bookList"/>
 </div>
 
+<div class="bookshelf"></div>
+
 </body>
 </html>

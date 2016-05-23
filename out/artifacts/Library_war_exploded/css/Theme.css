@@ -5,13 +5,12 @@
 }
 
 .bookshelf {
-    width: 1200px;
-    height: 720px;
+    width: 933px;
+    height: 400px;
     position: relative;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("/images/bookshelf.png");
+    background-image: url("/images/bookshelf.jpg");
 }
 
 .search {
