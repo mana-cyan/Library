@@ -15,10 +15,8 @@
     <s:submit key="login" theme="simple" class="button"/>
 </div>
 
-<div class="bookshelf">
-    <div align="left" class="tab">
-        <s:text name="bookList"/>
-    </div>
+<div align="left" class="tab">
+    <s:text name="bookList"/>
 </div>
 
 </body>

@@ -58,7 +58,8 @@
 .tab {
     width: 500px;
     height: 100px;
-    margin-inside: 50px;
+    margin-top: 100px;
+    margin-left: 200px;
     text-align: center;
     padding-top: auto;
     padding-bottom: auto;
