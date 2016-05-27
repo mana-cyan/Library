@@ -21,7 +21,7 @@
     </div>
     <div class="bookshelf">
         <div class="books" align="center">
-            <s:text name="bookList"/>
+            bookList
         </div>
     </div>
 </div>
