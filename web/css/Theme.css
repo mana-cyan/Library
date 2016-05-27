@@ -4,15 +4,6 @@
     background-size: cover;
 }
 
-.bookshelf {
-    width: 933px;
-    height: 400px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("/images/bookshelf.jpg");
-}
-
 .search {
     margin-top: 30px;
     margin-left: 20px;
@@ -54,12 +45,43 @@
     margin-right: 10px;
 }
 
-.tab {
-    background-image: url("/images/tab.png");
-    margin-left: 20%;
-}
-
 .divMainFrame{
     position: relative;
+    padding: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.tab {
+    position: absolute;
+    background: url("/images/tab.png") no-repeat ;
+    background-size: contain;
+    width: 240px;
+    height: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 36pt;
+    color: lightgray;
+    z-index: 1;
+}
+
+.bookshelf {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 400px;
+    text-align: center;
+    background-image: url("/images/bookshelf.jpg");
+}
+
+.books {
+    width: 80%;
+    height: 80%;
+    background-color: #9DBFF6;
+    vertical-align:middle;
 }
