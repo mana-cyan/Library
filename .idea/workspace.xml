@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a04a0fb4-1aa3-4b85-9bbd-47e189033b4c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/content/HomePage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/content/HomePage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/content/HomePage.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/content/HomePage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/css/Theme.css" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/css/Theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/Theme.css" afterPath="$PROJECT_DIR$/web/css/Theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Library.iws" />
@@ -52,7 +48,7 @@
       <file leaf-file-name="HomePage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/content/HomePage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2258065" vertical-offset="230" max-vertical-offset="792">
+            <state vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="792">
               <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding />
             </state>
@@ -62,8 +58,8 @@
       <file leaf-file-name="Theme.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/css/Theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6306914" vertical-offset="1474" max-vertical-offset="2090">
-              <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.5935919" vertical-offset="1474" max-vertical-offset="2090">
+              <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -167,6 +163,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -313,8 +311,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -651,7 +647,8 @@
       <workItem from="1464257102141" duration="3835000" />
       <workItem from="1464319439661" duration="2740000" />
       <workItem from="1464322785706" duration="2540000" />
-      <workItem from="1464345384295" duration="78000" />
+      <workItem from="1464345384295" duration="693000" />
+      <workItem from="1464417364688" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/mana-cyan/Library&#10;">
       <created>1463982803075</created>
@@ -683,11 +680,17 @@
       <option name="project" value="LOCAL" />
       <updated>1464322149621</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge branch 'master' of https://github.com/mana-cyan/Library&#10;">
+      <created>1464345471527</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1464345471527</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67274000" />
+    <option name="totallyTimeSpent" value="67943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
@@ -1116,7 +1119,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/content/HomePage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2258065" vertical-offset="230" max-vertical-offset="792">
+        <state vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="792">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
         </state>
@@ -1124,8 +1127,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/Theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6306914" vertical-offset="1474" max-vertical-offset="2090">
-          <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.5935919" vertical-offset="1474" max-vertical-offset="2090">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
           <folding />
         </state>
       </provider>
