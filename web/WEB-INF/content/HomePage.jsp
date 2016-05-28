@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <link href="/css/Theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/Theme.css" rel="stylesheet" type="text/css"/>
     <title><s:text name="library"/></title>
 </head>
 
@@ -21,7 +21,7 @@
     </div>
     <div class="bookshelf">
         <div class="books" align="center">
-            bookList
+            <img class="prev" src="images/prev.png">
         </div>
     </div>
 </div>
