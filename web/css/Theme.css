@@ -69,17 +69,27 @@
     background-image: url("/images/bookshelf.jpg");
 }
 
-.books {
-    width: 80%;
+.bookList {
+    width: 90%;
     height: 80%;
     position: absolute;
-    background-color: #9DBFF6;
-    margin: 4% 10%;
+    margin: 5%;
     display:table-cell;
 }
 
 .prev {
     text-align: start;
     float: left;
-    margin-left: 3%;
+}
+
+.next {
+    text-align: end;
+    float: right;
+}
+
+.book {
+    width: 30%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
 }

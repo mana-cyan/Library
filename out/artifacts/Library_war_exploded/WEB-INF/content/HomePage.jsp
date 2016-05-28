@@ -20,8 +20,11 @@
         <s:text name="bookList"/>
     </div>
     <div class="bookshelf">
-        <div class="books" align="center">
+        <div class="bookList" align="center">
             <img class="prev" src="images/prev.png">
+            <img class="book" src="images/css.jpg">
+            <img class="book" src="images/javascript.jpg">
+            <img class="next" src="images/next.png">
         </div>
     </div>
 </div>
