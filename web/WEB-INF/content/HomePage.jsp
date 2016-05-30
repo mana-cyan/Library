@@ -4,15 +4,22 @@
 
 <head>
     <link href="css/Theme.css" rel="stylesheet" type="text/css"/>
+    <script language="JavaScript" src="js/HomePage.js"></script>
     <title><s:text name="library"/></title>
 </head>
 
 <body class="background">
 
 <div align="right" class="search">
-    <s:textfield name="search" class="editText"/>
-    <s:submit key="search" theme="simple" class="button"/>
-    <s:submit key="login" theme="simple" class="button"/>
+    <s:form theme="simple" action="SearchAction">
+        <s:textfield name="search" class="editText"/>
+        <s:submit key="search" class="button"/>
+    </s:form>
+</div>
+
+<div class="user">
+    <s:submit id="btnLogin" key="login" theme="simple" class="button" onclick="Login()"/>
+    <s:submit id="btnRegist1" key="register" theme="simple" class="button" onclick="Regist()"/>
 </div>
 
 <div class="divMainFrame">
@@ -22,8 +29,8 @@
     <div class="bookshelf">
         <div class="bookList" align="center">
             <img class="prev" src="images/prev.png">
-            <img class="book" src="images/css.jpg">
-            <img class="book" src="images/javascript.jpg">
+            <img id="book_1" class="book" src="books/css.jpg">
+            <img id="book_2" class="book" src="books/javascript.jpg">
             <img class="next" src="images/next.png">
         </div>
     </div>

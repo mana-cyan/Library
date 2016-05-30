@@ -4,10 +4,14 @@
     background-size: cover;
 }
 
-.search {
+.user {
     margin-top: 10px;
     margin-left: 20px;
-    margin-right: 30px;
+}
+
+.search {
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .editText {
@@ -25,7 +29,6 @@
     height: 30px;
     border: outset 2px;
     border-radius: 5px;
-    margin-right: 10px;
 }
 
 .buttonPressed {
@@ -38,7 +41,7 @@
 
 .divMainFrame{
     position: relative;
-    padding: 1%;
+    padding: 3%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -63,7 +66,7 @@
     position: relative;
     width: 1000px;
     height: 420px;
-    margin-top: 14%;
+    margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
     background-image: url("/images/bookshelf.jpg");
@@ -78,7 +81,7 @@
 }
 
 .prev {
-    text-align: start;
+    text-align: left;
     float: left;
 }
 
@@ -92,4 +95,90 @@
     height: 100%;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+/*登录框中的text格式*/
+.logintext{
+    width: 210px;
+    height: 25px;
+    solid-color: transparent;
+    border: inset #9DBFF6 1px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: -50px;
+    margin-top:40px;
+}
+/*注册按钮格式*/
+#btnRegist1{
+    width: 50px;
+    height: 30px;
+    border: outset 2px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/*登录按钮格式*/
+#btnLogin1{
+    width: 100px;
+    height: 40px;
+    border: outset 2px;
+    border-radius: 5px;
+    margin-left: -50px;
+    margin-top: 40px;
+}
+/*触发登录框事件的button格式*/
+#btnLogin{
+    width: 50px;
+    height: 30px;
+    border: outset 2px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/*灰色罩子格式*/
+#mask{
+    background: #000000;
+    opacity:0.75;
+    filter:alpha(opacity=75);
+    height:1000px;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1000;
+}
+/*登录类型*/
+#login{
+    position:fixed;
+    left:25%;
+    top:30%;
+    z-index:1001;
+}
+/*登录图片类型*/
+.loginCon{
+    width:670px;
+    height:380px;
+    background:url("/images/login.jpg") no-repeat;
+    position:relative;
+}
+/*注册图片类型*/
+.registCon{
+    width:670px;
+    height:380px;
+    background:url("/images/Regist.jpg") no-repeat;
+    position:relative;
+}
+/*hidden的格式*/
+#hid{
+    width: auto;
+    height: auto;
+    font-size: 18px;
+}
+/*关闭格式*/
+#close{
+    width:30px;
+    height:30px;
+    background:url("/images/close.png") no-repeat;
+    cursor:pointer;
+    position:absolute;
+    right:5px;
+    top:5px;
 }

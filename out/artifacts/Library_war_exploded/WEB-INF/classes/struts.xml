@@ -12,13 +12,23 @@
 
     <package name="library" namespace="/" extends="struts-default">
 
+        <action name="SearchAction" class="com.ccnu.library.action.SearchAction">
+            <result name="error">/WEB-INF/content/BookNotFound.jsp</result>
+            <result>/WEB-INF/content/SearchResult.jsp</result>
+        </action>
+
+        <action name="RegistAction" class="com.ccnu.library.action.RegistAction">
+            <result name="error">/WEB-INF/content/RegisterError.jsp</result>
+            <result name="success">/WEB-INF/content/RegisterError.jsp</result>
+        </action>
+
         <action name="*Action" class="com.ccnu.library.{1}Action">
             <result name="error">/WEB-INF/content/RegisterError.jsp</result>
             <result>/WEB-INF/content/</result>
         </action>
 
         <action name="*">
-            <result>/WEB-INF/content/HomePage.jsp</result>
+            <result>/WEB-INF/content/{1}.jsp</result>
         </action>
     </package>
 
