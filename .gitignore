@@ -57,3 +57,4 @@ out/artifacts/Library_war_exploded/images/
 out/artifacts/Library_war_exploded/js/
 out/artifacts/Library_war_exploded/script/
 out/production/Library/com/
+/.gitignore
