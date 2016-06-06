@@ -1,17 +1,19 @@
 package com.ccnu.library.action;
 
 import com.ccnu.library.Book;
-import com.ccnu.library.databasecontent.DBContent;
+import com.ccnu.library.data.BookinfoEntity;
+import com.ccnu.library.data.HibernateUtils;
+import com.ccnu.library.data.UserinfoEntity;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import java.util.List;
 
 public class SearchAction extends ActionSupport {
 
     private String name;
     private Book book;
-    private Connection conn;
 
     public String getName() {
         return name;
@@ -30,12 +32,28 @@ public class SearchAction extends ActionSupport {
     }
 
     public String execute() throws Exception {
-        Class.forName(DBContent.DRIVER);
-        conn = DriverManager.getConnection(DBContent.DATABASE,DBContent.USER,DBContent.PASSWORD);
-        System.out.println("连接成功!");
-        book = DBContent.findBook(conn,getName());
-        conn.close();
-        if(null != book) return SUCCESS;
+        ActionContext ctx = ActionContext.getContext();
+        HibernateUtils.createSessionFactory();
+        Session session = HibernateUtils.getSession();
+        String hql = "from BookinfoEntity as Book where name=:bookname ";
+        Query query = session.createQuery(hql);
+        query.setString("bookname",getName());
+        List<BookinfoEntity> list = query.list();
+
+        if(list.isEmpty()){
+            session.close();
+            return ERROR;
+        }
+
+        for(BookinfoEntity name : list) {
+            String name_reg = "\\w*" + getName() + "\\w*";
+            if(name.getName().matches(name_reg)){
+                ctx.getSession().put("id",name.getId());
+            }
+        }
+
+
+
         return ERROR;
     }
 }

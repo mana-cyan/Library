@@ -1,27 +1,55 @@
-.background {
-    text-align: center;
-    background: url(/images/background.png) no-repeat;
-    background-size: cover;
-}
-
 .user {
     margin-top: 10px;
     margin-left: 20px;
 }
 
 .search {
-    margin-top: 10px;
-    margin-right: 10px;
+    background: url(/images/headline.png) no-repeat;
+    background-size: 100% 100%;
+    height: 70px;
+}
+
+.search input{
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.top ul{
+    width: 100%;
+}
+
+.top ul li{
+    width: 33.33%;
+    text-align: center;
+    height: 50px;
+}
+
+.top ul li a{
+    background-color: darkgrey;
+
+}
+
+.top ul li a img{
+    width: 30px;
+}
+
+.top ul li a:hover{
+    color: #9DBFF6;
+    background: #3e3e3e;
 }
 
 .editText {
-    width: 120px;
+    width: 200px;
     height: 30px;
     solid-color: transparent;
     border: inset #9DBFF6 1px;
     border-radius: 5px;
     font-size: 18px;
-    margin-right: 10px;
+    margin: 20px;
+}
+
+#carousel-example-generic {
+    margin-top: 60px;
 }
 
 .button {
@@ -108,7 +136,6 @@
     margin-left: -50px;
     margin-top:40px;
 }
-/*注册按钮格式*/
 #btnRegist1{
     width: 50px;
     height: 30px;
@@ -125,14 +152,8 @@
     margin-left: -50px;
     margin-top: 40px;
 }
-/*触发登录框事件的button格式*/
-#btnLogin{
-    width: 50px;
-    height: 30px;
-    border: outset 2px;
-    border-radius: 5px;
-    margin-right: 10px;
-}
+
+
 /*灰色罩子格式*/
 #mask{
     background: #000000;
@@ -160,7 +181,7 @@
     position:relative;
 }
 /*注册图片类型*/
-.registCon{
+.registerCon{
     width:670px;
     height:380px;
     background:url("/images/Regist.jpg") no-repeat;
@@ -181,4 +202,15 @@
     position:absolute;
     right:5px;
     top:5px;
+}
+
+#UpToTop{
+    background: url(/images/UpToTop.png)no-repeat;
+    background-size: 100%;
+    position: fixed;
+    bottom: 100px;
+    height: 50px;
+    right: 100px;
+    display: none;
+    z-index: 3;
 }

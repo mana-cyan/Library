@@ -43,7 +43,7 @@ function Regist(){
     document.body.appendChild(oMask);
     var oLogin=document.createElement("div");
     oLogin.id="login";
-    oLogin.innerHTML="<div class='registCon'><br><br><br><br><form action='RegistAction' method='post' id='form1'><input type='text' class='logintext' name='username'><br><input type='password' class='logintext' name='password'><br><input type='button' id='btnLogin1' value='зЂВс'></form><div id='close'></div></div>";
+    oLogin.innerHTML="<div class='registerCon'><br><br><br><br><form action='RegisterAction' method='post' id='form1'><input type='text' class='logintext' name='username'><br><input type='password' class='logintext' name='password'><br><input type='button' id='btnLogin1' value='зЂВс'></form><div id='close'></div></div>";
     document.body.appendChild(oLogin);
     var dHeight=oLogin.offsetHeight;
     var dWidth=oLogin.offsetWidth;
