@@ -17,7 +17,7 @@
             <result>/WEB-INF/content/SearchResult.jsp</result>
         </action>
 
-        <action name="RegistAction" class="com.ccnu.library.action.RegistAction">
+        <action name="RegistAction" class="com.ccnu.library.action.RegisterAction">
             <result name="error">/WEB-INF/content/RegisterError.jsp</result>
             <result name="success">/WEB-INF/content/RegisterError.jsp</result>
         </action>
