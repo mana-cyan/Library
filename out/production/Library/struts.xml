@@ -8,6 +8,8 @@
     
     <constant name="struts.custom.i18n.resources" value="mess"/>
 
+    <constant name="struts.ui.theme" value="simple"/>
+
     <constant name="struts.devMode" value="true"/>
 
     <package name="library" namespace="/" extends="struts-default">
