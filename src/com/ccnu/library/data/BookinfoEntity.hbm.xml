@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='GBK'?>
 <!DOCTYPE hibernate-mapping PUBLIC
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
@@ -8,14 +8,11 @@
         <id name="id">
             <column name="ID" sql-type="int" not-null="true"/>
         </id>
-        <property name="name">
-            <column name="Name" sql-type="varchar" length="20"/>
+        <property name="bookName">
+            <column name="BookName" sql-type="varchar" length="50" not-null="true"/>
         </property>
-        <property name="author">
-            <column name="Author" sql-type="varchar" length="10"/>
-        </property>
-        <property name="path">
-            <column name="Path" sql-type="varchar" length="20"/>
+        <property name="bookPath">
+            <column name="BookPath" sql-type="varchar" length="100" not-null="true"/>
         </property>
     </class>
 </hibernate-mapping>

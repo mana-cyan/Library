@@ -7,10 +7,9 @@
 <struts>
     
     <constant name="struts.custom.i18n.resources" value="mess"/>
-
     <constant name="struts.ui.theme" value="simple"/>
-
     <constant name="struts.devMode" value="true"/>
+    <constant name="struts.i18n.encoding" value="GBK"/>
 
     <package name="library" namespace="/" extends="struts-default">
 
@@ -19,14 +18,14 @@
             <result>/WEB-INF/content/SearchResult.jsp</result>
         </action>
 
-        <action name="RegistAction" class="com.ccnu.library.action.RegisterAction">
-            <result name="error">/WEB-INF/content/RegisterError.jsp</result>
-            <result name="success">/WEB-INF/content/RegisterError.jsp</result>
+        <action name="RegisterAction" class="com.ccnu.library.action.RegisterAction">
+            <result name="error">/WEB-INF/content/isRegistered.jsp</result>
+            <result>/WEB-INF/content/Welcome.jsp</result>
         </action>
 
-        <action name="*Action" class="com.ccnu.library.{1}Action">
-            <result name="error">/WEB-INF/content/RegisterError.jsp</result>
-            <result>/WEB-INF/content/</result>
+        <action name="LoginAction" class="com.ccnu.library.action.LoginAction">
+            <result name="error">/WEB-INF/content/loginError.jsp</result>
+            <result>/WEB-INF/content/Welcome.jsp</result>
         </action>
 
         <action name="*">

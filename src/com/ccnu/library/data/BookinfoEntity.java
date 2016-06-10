@@ -3,15 +3,14 @@ package com.ccnu.library.data;
 import javax.persistence.*;
 
 /**
- * Created by ikaros on 2016/6/6.
+ * Created by ikaros on 2016/6/9.
  */
 @Entity
 @Table(name = "bookinfo", schema = "", catalog = "librarydatabase")
 public class BookinfoEntity {
     private int id;
-    private String name;
-    private String author;
-    private String path;
+    private String bookName;
+    private String bookPath;
 
     @Id
     @Column(name = "ID", nullable = false, insertable = true, updatable = true)
@@ -24,33 +23,23 @@ public class BookinfoEntity {
     }
 
     @Basic
-    @Column(name = "Name", nullable = true, insertable = true, updatable = true, length = 20)
-    public String getName() {
-        return name;
+    @Column(name = "BookName", nullable = false, insertable = true, updatable = true, length = 50)
+    public String getBookName() {
+        return bookName;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Basic
-    @Column(name = "Author", nullable = true, insertable = true, updatable = true, length = 10)
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
     }
 
     @Basic
-    @Column(name = "Path", nullable = true, insertable = true, updatable = true, length = 20)
-    public String getPath() {
-        return path;
+    @Column(name = "BookPath", nullable = false, insertable = true, updatable = true, length = 100)
+    public String getBookPath() {
+        return bookPath;
     }
 
-    public void setPath(String path) {
-        this.path = path;
+    public void setBookPath(String bookPath) {
+        this.bookPath = bookPath;
     }
 
     @Override
@@ -61,9 +50,8 @@ public class BookinfoEntity {
         BookinfoEntity that = (BookinfoEntity) o;
 
         if (id != that.id) return false;
-        if (author != null ? !author.equals(that.author) : that.author != null) return false;
-        if (name != null ? !name.equals(that.name) : that.name != null) return false;
-        if (path != null ? !path.equals(that.path) : that.path != null) return false;
+        if (bookName != null ? !bookName.equals(that.bookName) : that.bookName != null) return false;
+        if (bookPath != null ? !bookPath.equals(that.bookPath) : that.bookPath != null) return false;
 
         return true;
     }
@@ -71,9 +59,8 @@ public class BookinfoEntity {
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (author != null ? author.hashCode() : 0);
-        result = 31 * result + (path != null ? path.hashCode() : 0);
+        result = 31 * result + (bookName != null ? bookName.hashCode() : 0);
+        result = 31 * result + (bookPath != null ? bookPath.hashCode() : 0);
         return result;
     }
 }

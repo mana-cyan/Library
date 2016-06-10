@@ -1,4 +1,4 @@
-package com.ikaros.action;
+package com.ccnu.library.action;
 
 import com.ccnu.library.data.HibernateUtils;
 import com.ccnu.library.data.UserinfoEntity;
@@ -11,8 +11,7 @@ import sun.misc.BASE64Encoder;
 import javax.servlet.http.*;
 import java.util.List;
 
-public class  LoginAction
-        implements Action
+public class  LoginAction implements Action
 {
     private String username;
     private String password;

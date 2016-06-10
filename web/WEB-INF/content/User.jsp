@@ -6,9 +6,9 @@
 
 <div align="right" class="search">
 
-    <div style="float: right; line-height: 70px; font-size: 0">
-        <s:submit id="btnLogin" key="login" theme="simple" class="btn btn-default" onclick="Login()"/>
-        <s:submit id="btnRegister" key="register" theme="simple" class="btn btn-default" onclick="Register()"/>
+    <div style="float: right; line-height: 70px; font-size: 20px; color: #ffffff; margin-right: 2%">
+        <%String username = session.getAttribute("user").toString();%>
+        <%=username%>
     </div>
 
     <div class="form-inline" style="float: right;">
@@ -23,7 +23,7 @@
 
 <div class="top">
     <ul class="nav navbar-nav">
-        <li><a href="HomePage"> <img src="images/home.png"></a></li>
+        <li><a href="Welcome"> <img src="images/home.png"></a></li>
         <li><a href="Permission"> <img src="images/books.png"></a></li>
         <li><a href="Personality"> <img src="images/person.png"></a></li>
     </ul>

@@ -49,6 +49,7 @@
 </div>
 </div>
 
+<a name="bookshelf" >
 <div class="divMainFrame">
     <div class="tab">
         <s:text name="bookList"/>
@@ -62,6 +63,6 @@
         </div>
     </div>
 </div>
-
+</a>
 </body>
 </html>
