@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a04a0fb4-1aa3-4b85-9bbd-47e189033b4c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LibraryDatabase.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/mess_zh_CN.properties" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/mess_zh_CN.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Library/mess_zh_CN.properties" afterPath="$PROJECT_DIR$/out/production/Library/mess_zh_CN.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Library.iws" />
@@ -652,7 +653,7 @@
       <workItem from="1465470643825" duration="6866000" />
       <workItem from="1465541500846" duration="3963000" />
       <workItem from="1465555262895" duration="6282000" />
-      <workItem from="1465827464353" duration="164000" />
+      <workItem from="1465827464353" duration="268000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/mana-cyan/Library&#10;">
       <created>1463982803075</created>
@@ -768,11 +769,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465574896681</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Merge branch 'master' of https://github.com/mana-cyan/Library&#10;">
+      <created>1465827641492</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1465827641492</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153154000" />
+    <option name="totallyTimeSpent" value="153258000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
