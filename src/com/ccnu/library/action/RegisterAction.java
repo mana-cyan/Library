@@ -59,7 +59,6 @@ public class RegisterAction extends ActionSupport {
             String password = new BASE64Encoder().encode(passwd);
             user.setPassword(password);
 
-
             session.save(user);
             transaction.commit();
         } catch (Exception e) {
@@ -69,6 +68,7 @@ public class RegisterAction extends ActionSupport {
                 session.close();
             }
         }
+        ctx.getSession().put("user",getUsername());
         return SUCCESS;
     }
 }
