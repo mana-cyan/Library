@@ -16,8 +16,6 @@
             <input type="text" name="search" class="editText"/>
             <input type="submit" value="ËÑË÷" class="btn btn-default">
         </form>
-        <!--s:submit id="btnLogin" key="login" theme="simple" class="btn btn-default" onclick="Login()"/-->
-        <!--s:submit id="btnRegister" key="register" theme="simple" class="btn btn-default" onclick="Regist()"/-->
     </div>
 </div>
 

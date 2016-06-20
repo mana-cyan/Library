@@ -2,9 +2,6 @@ package com.ccnu.library.data;
 
 import javax.persistence.*;
 
-/**
- * Created by ikaros on 2016/6/9.
- */
 @Entity
 @Table(name = "userinfo", schema = "", catalog = "librarydatabase")
 public class UserinfoEntity {
