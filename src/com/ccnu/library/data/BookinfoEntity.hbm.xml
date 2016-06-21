@@ -5,11 +5,20 @@
 <hibernate-mapping>
 
     <class name="com.ccnu.library.data.BookinfoEntity" table="bookinfo" schema="" catalog="librarydatabase">
-        <id name="bookName">
-            <column name="BookName" sql-type="varchar" length="50" not-null="true"/>
+        <id name="id">
+            <column name="ID" sql-type="int" not-null="true"/>
         </id>
+        <property name="bookName">
+            <column name="BookName" sql-type="varchar" length="50" not-null="true"/>
+        </property>
         <property name="bookPath">
             <column name="BookPath" sql-type="varchar" length="100" not-null="true"/>
+        </property>
+        <property name="storage">
+            <column name="Storage" sql-type="int"/>
+        </property>
+        <property name="rented">
+            <column name="Rented" sql-type="varchar" length="30"/>
         </property>
     </class>
 </hibernate-mapping>

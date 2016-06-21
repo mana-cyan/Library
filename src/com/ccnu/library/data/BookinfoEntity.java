@@ -7,7 +7,11 @@ import javax.persistence.*;
 public class BookinfoEntity {
     private String bookName;
     private String bookPath;
+    private int id;
+    private Integer storage;
+    private String rented;
 
+    @Basic
     @Id
     @Column(name = "BookName", nullable = false, insertable = true, updatable = true, length = 50)
     public String getBookName() {
@@ -46,5 +50,35 @@ public class BookinfoEntity {
         int result = bookName != null ? bookName.hashCode() : 0;
         result = 31 * result + (bookPath != null ? bookPath.hashCode() : 0);
         return result;
+    }
+
+    @Id
+    @Column(name = "ID", nullable = false, insertable = true, updatable = true)
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Basic
+    @Column(name = "Storage", nullable = true, insertable = true, updatable = true)
+    public Integer getStorage() {
+        return storage;
+    }
+
+    public void setStorage(Integer storage) {
+        this.storage = storage;
+    }
+
+    @Basic
+    @Column(name = "Rented", nullable = true, insertable = true, updatable = true, length = 30)
+    public String getRented() {
+        return rented;
+    }
+
+    public void setRented(String rented) {
+        this.rented = rented;
     }
 }

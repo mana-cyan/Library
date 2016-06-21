@@ -28,10 +28,8 @@ public class SearchAction extends ActionSupport {
         HibernateUtils.createSessionFactory();
         Session session = HibernateUtils.getSession();
 
-        //String hql = "from BookinfoEntity as Book where bookName=:name";
         String hql = "from BookinfoEntity";
         Query query = session.createQuery(hql);
-        //query.setString("name", getBookName());
         List<BookinfoEntity> list = query.list();
 
         List<String> books = new ArrayList<String>();

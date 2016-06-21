@@ -8,6 +8,7 @@ public class UserinfoEntity {
     private int id;
     private String username;
     private String password;
+    private String rented;
 
     @Id
     @Column(name = "ID", nullable = false, insertable = true, updatable = true)
@@ -59,5 +60,15 @@ public class UserinfoEntity {
         result = 31 * result + (username != null ? username.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
         return result;
+    }
+
+    @Basic
+    @Column(name = "Rented", nullable = true, insertable = true, updatable = true, length = 30)
+    public String getRented() {
+        return rented;
+    }
+
+    public void setRented(String rented) {
+        this.rented = rented;
     }
 }

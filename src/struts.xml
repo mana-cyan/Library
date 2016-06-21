@@ -28,6 +28,11 @@
             <result>/WEB-INF/content/Welcome.jsp</result>
         </action>
 
+        <action name="RentAction" class="com.ccnu.library.action.RentAction">
+            <result name="error">/WEB-INF/content/BookNotAvailable.jsp</result>
+            <result>/WEB-INF/content/RentResult.jsp</result>
+        </action>
+
         <action name="*">
             <result>/WEB-INF/content/{1}.jsp</result>
         </action>
