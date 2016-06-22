@@ -17,5 +17,11 @@
         <property name="rented">
             <column name="Rented" sql-type="varchar" length="30"/>
         </property>
+        <set name="requestsById" inverse="true">
+            <key>
+                <column name="UserID"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.ccnu.library.data.RequestEntity"/>
+        </set>
     </class>
 </hibernate-mapping>

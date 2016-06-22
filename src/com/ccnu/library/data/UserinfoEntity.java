@@ -1,6 +1,7 @@
 package com.ccnu.library.data;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "userinfo", schema = "", catalog = "librarydatabase")
@@ -9,6 +10,7 @@ public class UserinfoEntity {
     private String username;
     private String password;
     private String rented;
+    private Collection<RequestEntity> requestsById;
 
     @Id
     @Column(name = "ID", nullable = false, insertable = true, updatable = true)
@@ -70,5 +72,14 @@ public class UserinfoEntity {
 
     public void setRented(String rented) {
         this.rented = rented;
+    }
+
+    @OneToMany(mappedBy = "userinfoByUserId")
+    public Collection<RequestEntity> getRequestsById() {
+        return requestsById;
+    }
+
+    public void setRequestsById(Collection<RequestEntity> requestsById) {
+        this.requestsById = requestsById;
     }
 }

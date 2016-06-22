@@ -9,13 +9,15 @@
       <property name="jdbc.fetch_size">50</property>
       <property name="jdbc.batch_size">30</property>
       <property name="connection.url">jdbc:mysql://localhost:3306/LibraryDatabase</property>
-      <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
       <property name="connection.username">root</property>
       <property name="connection.password">885785</property>
+      <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
       <mapping class="com.ccnu.library.data.BookinfoEntity"/>
         <mapping class="com.ccnu.library.data.UserinfoEntity"/>
         <mapping resource="com/ccnu/library/data/BookinfoEntity.hbm.xml"/>
         <mapping resource="com/ccnu/library/data/UserinfoEntity.hbm.xml"/>
+      <mapping class="com.ccnu.library.data.RequestEntity"/>
+      <mapping resource="com/ccnu/library/data/RequestEntity.hbm.xml"/>
       <!-- DB schema will be updated if needed -->
     <!-- <property name="hbm2ddl.auto">update</property> -->
   </session-factory>

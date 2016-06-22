@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.ccnu.library.data.RequestEntity" table="request" schema="" catalog="librarydatabase">
+        <property name="bookId">
+            <column name="BookID" sql-type="int"/>
+        </property>
+        <property name="userId">
+            <column name="UserID" sql-type="int"/>
+        </property>
+        <property name="fromDate">
+            <column name="FromDate" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="toDate">
+            <column name="ToDate" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="statu">
+            <column name="Statu" sql-type="bit" not-null="true"/>
+        </property>
+        <many-to-one name="bookinfoByBookId" class="com.ccnu.library.data.BookinfoEntity">
+            <column name="BookID"/>
+        </many-to-one>
+        <many-to-one name="userinfoByUserId" class="com.ccnu.library.data.UserinfoEntity">
+            <column name="UserID"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

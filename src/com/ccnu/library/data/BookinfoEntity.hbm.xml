@@ -11,6 +11,12 @@
         <property name="bookName">
             <column name="BookName" sql-type="varchar" length="50" not-null="true"/>
         </property>
+        <property name="bookAuthor">
+            <column name="BookAuthor" sql-type="varchar" length="20" not-null="true"/>
+        </property>
+        <property name="bookInfo">
+            <column name="BookInfo" sql-type="varchar" length="200" not-null="true"/>
+        </property>
         <property name="bookPath">
             <column name="BookPath" sql-type="varchar" length="100" not-null="true"/>
         </property>
@@ -20,5 +26,11 @@
         <property name="rented">
             <column name="Rented" sql-type="varchar" length="30"/>
         </property>
+        <set name="requestsById" inverse="true">
+            <key>
+                <column name="BookID"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.ccnu.library.data.RequestEntity"/>
+        </set>
     </class>
 </hibernate-mapping>
