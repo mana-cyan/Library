@@ -1,7 +1,10 @@
 package com.ccnu.library.action;
 
+import com.ccnu.library.BookUtils;
+import com.ccnu.library.Utils;
 import com.ccnu.library.data.BookinfoEntity;
 import com.ccnu.library.data.HibernateUtils;
+import com.ccnu.library.data.RequestEntity;
 import com.ccnu.library.data.UserinfoEntity;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
@@ -14,43 +17,66 @@ import java.util.List;
 public class RentAction extends ActionSupport {
 
     private String bookName;
+    private String fromDate;
+    private String toDate;
+
+    private BookinfoEntity book;
+    private UserinfoEntity user;
     private Session session;
 
     public String getBookName() {
         return bookName;
     }
 
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
+    public String getToDate() {
+        return toDate;
     }
 
-    private boolean checkBookStorage() {
+    public String getFromDate() {
+        return fromDate;
+    }
 
-        boolean status = true;
 
-        String findBook = "from BookinfoEntity where bookName=:name";
-        Query findBookQuery = session.createQuery(findBook);
-        findBookQuery.setString("name", getBookName());
 
-        List<BookinfoEntity> bookList =  findBookQuery.list();
-        for(BookinfoEntity book : bookList)
+    private void getUserinfo() {
+        HibernateUtils.createSessionFactory();
+        session = HibernateUtils.getSession();
+        ActionContext ctx = ActionContext.getContext();
+
+        String findUser = "from UserinfoEntity where username=:name";
+        Query findUserQuery = session.createQuery(findUser);
+        findUserQuery.setString("name", ctx.getSession().get("user").toString());
+
+        List<UserinfoEntity> userList =  findUserQuery.list();
+        for(UserinfoEntity u : userList)
         {
-            if(0 == book.getStorage()){
-                status = false;
-            }
+            user.setId(u.getId());
+            user.setUsername(u.getUsername());
         }
-        return status;
+        session.close();
     }
 
     private void sendRequest() {
-        String request = "from RequestEntity";
-    }
 
-    public String execute() throws Exception {
         HibernateUtils.createSessionFactory();
         session = HibernateUtils.getSession();
         Transaction transaction = session.beginTransaction();
 
+        RequestEntity request = new RequestEntity();
+        request.setBookId(book.getId());
+        request.setUserId(user.getId());
+        request.setFromDate(getFromDate());
+        request.setToDate(getToDate());
+
+        session.save(request);
+        transaction.commit();
+
+        session.close();
+    }
+
+    public String execute() throws Exception {
+        user = new UserinfoEntity();
+        getUserinfo();
         return SUCCESS;
 
     }

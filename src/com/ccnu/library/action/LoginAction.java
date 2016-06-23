@@ -39,9 +39,11 @@ public class  LoginAction implements Action
         ActionContext ctx = ActionContext.getContext();
         HibernateUtils.createSessionFactory();
         Session session = HibernateUtils.getSession();
+
         String hql = "from UserinfoEntity as User where username=:name";
         Query query = session.createQuery(hql);
         query.setString("name",getUsername());
+
         List<UserinfoEntity> list = query.list();
 
         if(list.isEmpty()){

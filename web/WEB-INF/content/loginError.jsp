@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>´íÎóÒ³Ãæ</title>
+    <meta http-equiv="refresh" content="1;url=http://localhost:8080/Library"/>
 </head>
 <body>
 <div style="margin-top: 20%; font-size: 25px;" align="center">

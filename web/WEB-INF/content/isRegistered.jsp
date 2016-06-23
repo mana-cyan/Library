@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <meta http-equiv="refresh" content="2;URL=http://localhost:8080/loginForm">
     <title>跳转登录</title>
+    <meta http-equiv="refresh" content="1;url=http://localhost:8080/Library"/>
 </head>
 <body>
 <div style="margin-top: 20%; font-size: 25px;" align="center">

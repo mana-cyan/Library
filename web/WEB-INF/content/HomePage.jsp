@@ -18,7 +18,6 @@
     <jsp:param name="pageTitle" value="library"/>
 </jsp:include>
 
-<div>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -47,22 +46,6 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-</div>
 
-<a name="bookshelf" >
-<div class="divMainFrame">
-    <div class="tab">
-        <s:text name="bookList"/>
-    </div>
-    <div class="bookshelf">
-        <div class="bookList" align="center">
-            <img class="prev" src="images/prev.png">
-            <img id="book_1" class="book" src="books/css.jpg">
-            <img id="book_2" class="book" src="books/javascript.jpg">
-            <img class="next" src="images/next.png">
-        </div>
-    </div>
-</div>
-</a>
 </body>
 </html>

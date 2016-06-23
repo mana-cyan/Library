@@ -3,6 +3,9 @@ package com.ccnu.library.data;
 import javax.persistence.*;
 import java.util.Collection;
 
+/**
+ * Created by ikaros on 2016/6/23.
+ */
 @Entity
 @Table(name = "userinfo", schema = "", catalog = "librarydatabase")
 public class UserinfoEntity {
@@ -42,6 +45,16 @@ public class UserinfoEntity {
         this.password = password;
     }
 
+    @Basic
+    @Column(name = "Rented", nullable = true, insertable = true, updatable = true, length = 30)
+    public String getRented() {
+        return rented;
+    }
+
+    public void setRented(String rented) {
+        this.rented = rented;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -51,6 +64,7 @@ public class UserinfoEntity {
 
         if (id != that.id) return false;
         if (password != null ? !password.equals(that.password) : that.password != null) return false;
+        if (rented != null ? !rented.equals(that.rented) : that.rented != null) return false;
         if (username != null ? !username.equals(that.username) : that.username != null) return false;
 
         return true;
@@ -61,17 +75,8 @@ public class UserinfoEntity {
         int result = id;
         result = 31 * result + (username != null ? username.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
+        result = 31 * result + (rented != null ? rented.hashCode() : 0);
         return result;
-    }
-
-    @Basic
-    @Column(name = "Rented", nullable = true, insertable = true, updatable = true, length = 30)
-    public String getRented() {
-        return rented;
-    }
-
-    public void setRented(String rented) {
-        this.rented = rented;
     }
 
     @OneToMany(mappedBy = "userinfoByUserId")

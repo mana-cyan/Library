@@ -3,7 +3,7 @@ package com.ccnu.library.data;
 import javax.persistence.*;
 
 /**
- * Created by ikaros on 2016/6/22.
+ * Created by ikaros on 2016/6/23.
  */
 @Entity
 @Table(name = "request", schema = "", catalog = "librarydatabase")
@@ -15,6 +15,7 @@ public class RequestEntity {
     private boolean statu;
     private BookinfoEntity bookinfoByBookId;
     private UserinfoEntity userinfoByUserId;
+    private int id;
 
     @Basic
     @Column(name = "BookID", nullable = true, insertable = true, updatable = true)
@@ -110,5 +111,15 @@ public class RequestEntity {
 
     public void setUserinfoByUserId(UserinfoEntity userinfoByUserId) {
         this.userinfoByUserId = userinfoByUserId;
+    }
+
+    @Id
+    @Column(name = "ID", nullable = false, insertable = true, updatable = true)
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

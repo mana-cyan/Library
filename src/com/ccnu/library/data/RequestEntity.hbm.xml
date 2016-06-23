@@ -5,12 +5,9 @@
 <hibernate-mapping>
 
     <class name="com.ccnu.library.data.RequestEntity" table="request" schema="" catalog="librarydatabase">
-        <property name="bookId">
-            <column name="BookID" sql-type="int"/>
-        </property>
-        <property name="userId">
-            <column name="UserID" sql-type="int"/>
-        </property>
+        <id name="id">
+            <column name="ID" sql-type="int" not-null="true"/>
+        </id>
         <property name="fromDate">
             <column name="FromDate" sql-type="varchar" length="20" not-null="true"/>
         </property>
@@ -20,11 +17,5 @@
         <property name="statu">
             <column name="Statu" sql-type="bit" not-null="true"/>
         </property>
-        <many-to-one name="bookinfoByBookId" class="com.ccnu.library.data.BookinfoEntity">
-            <column name="BookID"/>
-        </many-to-one>
-        <many-to-one name="userinfoByUserId" class="com.ccnu.library.data.UserinfoEntity">
-            <column name="UserID"/>
-        </many-to-one>
     </class>
 </hibernate-mapping>
