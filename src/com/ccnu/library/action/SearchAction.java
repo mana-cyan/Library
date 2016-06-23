@@ -33,10 +33,12 @@ public class SearchAction extends ActionSupport {
         List<BookinfoEntity> list = query.list();
 
         List<String> books = new ArrayList<String>();
+        int id = 0;
         String name_reg = "\\.*" + getSearch() + "\\.*";
 
         for(BookinfoEntity book : list) {
             if(book.getBookName().matches(name_reg)){
+                id = book.getId();
                 books.add(book.getBookName());
             }
         }
@@ -46,7 +48,7 @@ public class SearchAction extends ActionSupport {
             return ERROR;
         }
 
-        ctx.getSession().put("id",books);
+        ctx.getSession().put("id", id);
 
         return SUCCESS;
     }

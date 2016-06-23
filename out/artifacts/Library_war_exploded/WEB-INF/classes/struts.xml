@@ -29,7 +29,10 @@
         </action>
 
         <action name="RentAction" class="com.ccnu.library.action.RentAction">
-            <result name="error">/WEB-INF/content/BookNotAvailable.jsp</result>
+            <result>/WEB-INF/content/RentResult.jsp</result>
+        </action>
+
+        <action name="CheckAction" class="com.ccnu.library.action.CheckAction">
             <result>/WEB-INF/content/RentResult.jsp</result>
         </action>
 

@@ -11,6 +11,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.util.Date;
 import java.util.List;
 
 public class RentAction extends ActionSupport {
@@ -22,13 +23,12 @@ public class RentAction extends ActionSupport {
     private UserinfoEntity user;
     private Session session;
 
+    public String getFromDate() {
+        return fromDate;
+    }
 
     public String getToDate() {
         return toDate;
-    }
-
-    public String getFromDate() {
-        return fromDate;
     }
 
     private void getUserinfo() {
@@ -70,7 +70,9 @@ public class RentAction extends ActionSupport {
     public String execute() throws Exception {
         user = new UserinfoEntity();
         book = Utils.getBookInfo();
-        getUserinfo();
+        this.getUserinfo();
+        ActionContext.getContext().getSession().put("fromDate",getFromDate());
+        //sendRequest();
         return SUCCESS;
     }
 
