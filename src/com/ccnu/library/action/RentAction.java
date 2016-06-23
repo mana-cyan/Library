@@ -1,7 +1,6 @@
 package com.ccnu.library.action;
 
 import com.ccnu.library.BookUtils;
-import com.ccnu.library.Utils;
 import com.ccnu.library.data.BookinfoEntity;
 import com.ccnu.library.data.HibernateUtils;
 import com.ccnu.library.data.RequestEntity;

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a04a0fb4-1aa3-4b85-9bbd-47e189033b4c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/content/HomePage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/content/HomePage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ccnu/library/action/RentAction.java" afterPath="$PROJECT_DIR$/src/com/ccnu/library/action/RentAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/content/Welcome.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/content/Welcome.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Library/struts.xml" afterPath="$PROJECT_DIR$/out/production/Library/struts.xml" />
@@ -80,11 +81,9 @@
       <file leaf-file-name="RentAction.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ccnu/library/action/RentAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5177066" vertical-offset="1233" max-vertical-offset="1848">
-              <caret line="76" column="46" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.07419899" vertical-offset="0" max-vertical-offset="1826">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -845,7 +844,7 @@
       <workItem from="1466423662614" duration="5883000" />
       <workItem from="1466507603982" duration="9543000" />
       <workItem from="1466588682329" duration="12486000" />
-      <workItem from="1466665477391" duration="5761000" />
+      <workItem from="1466665477391" duration="5788000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/mana-cyan/Library&#10;">
       <created>1463982803075</created>
@@ -1009,11 +1008,17 @@
       <option name="project" value="LOCAL" />
       <updated>1466671294542</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Merge branch 'master' of https://github.com/mana-cyan/Library&#10;">
+      <created>1466671301590</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1466671301590</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191489000" />
+    <option name="totallyTimeSpent" value="191516000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1470,11 +1475,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ccnu/library/action/RentAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5177066" vertical-offset="1233" max-vertical-offset="1848">
-          <caret line="76" column="46" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.07419899" vertical-offset="0" max-vertical-offset="1826">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
