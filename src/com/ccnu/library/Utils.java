@@ -50,6 +50,8 @@ public class Utils {
 
         List<RequestEntity> requestList = requestQuey.list();
 
+        session.close();
+
         return requestList;
     }
 
