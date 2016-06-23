@@ -2,17 +2,18 @@ package com.ccnu.library;
 
 import com.ccnu.library.data.BookinfoEntity;
 import com.ccnu.library.data.HibernateUtils;
+import com.ccnu.library.data.RequestEntity;
 import com.opensymphony.xwork2.ActionContext;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
 import java.util.List;
 
-public class BookUtils {
+public class Utils {
 
     private static Session session;
 
-    public BookinfoEntity getBookInfo() {
+    public static BookinfoEntity getBookInfo() {
 
         BookinfoEntity book = new BookinfoEntity();
 
@@ -37,6 +38,19 @@ public class BookUtils {
         }
         session.close();
         return book;
+    }
+
+    public static List<RequestEntity> getRequests() {
+
+        HibernateUtils.createSessionFactory();
+        session = HibernateUtils.getSession();
+
+        String findRequest = "from RequestEntity";
+        Query requestQuey = session.createQuery(findRequest);
+
+        List<RequestEntity> requestList = requestQuey.list();
+
+        return requestList;
     }
 
 }

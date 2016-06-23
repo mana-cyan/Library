@@ -1,6 +1,6 @@
 package com.ccnu.library.action;
 
-import com.ccnu.library.BookUtils;
+import com.ccnu.library.Utils;
 import com.ccnu.library.data.BookinfoEntity;
 import com.ccnu.library.data.HibernateUtils;
 import com.ccnu.library.data.RequestEntity;
@@ -15,7 +15,6 @@ import java.util.List;
 
 public class RentAction extends ActionSupport {
 
-    private String bookName;
     private String fromDate;
     private String toDate;
 
@@ -23,9 +22,6 @@ public class RentAction extends ActionSupport {
     private UserinfoEntity user;
     private Session session;
 
-    public String getBookName() {
-        return bookName;
-    }
 
     public String getToDate() {
         return toDate;
@@ -34,8 +30,6 @@ public class RentAction extends ActionSupport {
     public String getFromDate() {
         return fromDate;
     }
-
-
 
     private void getUserinfo() {
         HibernateUtils.createSessionFactory();
@@ -75,9 +69,9 @@ public class RentAction extends ActionSupport {
 
     public String execute() throws Exception {
         user = new UserinfoEntity();
+        book = Utils.getBookInfo();
         getUserinfo();
         return SUCCESS;
-
     }
 
 }
