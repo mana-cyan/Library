@@ -6,6 +6,10 @@
 
 <div align="right" class="search">
 
+    <div class="logo">
+        图书管理系统
+    </div>
+
     <div style="float: right; line-height: 70px; font-size: 1px">
         <s:submit id="btnLogin" key="login" theme="simple" class="btn btn-default" onclick="Login()"/>
         <s:submit id="btnRegister" key="register" theme="simple" class="btn btn-default" onclick="Register()"/>

@@ -24,8 +24,7 @@ CREATE TABLE Request(
   BookID INT NOT NULL,
   UserID INT NOT NULL,
   FromDate VARCHAR(20) NOT NULL,
-  ToDate VARCHAR(20) NOT NULL,
-  Statu BIT NOT NULL
+  ToDate VARCHAR(20) NOT NULL
 );
 
 INSERT INTO BookInfo(BookName,BookAuthor,BookInfo,BookPath) VALUES
