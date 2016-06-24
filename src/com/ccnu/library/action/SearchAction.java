@@ -48,7 +48,7 @@ public class SearchAction extends ActionSupport {
             return ERROR;
         }
 
-        ctx.getSession().put("id", id);
+        ctx.getSession().put("bookID", id);
 
         return SUCCESS;
     }

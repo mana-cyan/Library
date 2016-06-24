@@ -29,11 +29,21 @@
         </action>
 
         <action name="RentAction" class="com.ccnu.library.action.RentAction">
+            <result name="error">/WEB-INF/content/RentError.jsp</result>
             <result>/WEB-INF/content/RentResult.jsp</result>
         </action>
 
         <action name="CheckAction" class="com.ccnu.library.action.CheckAction">
-            <result>/WEB-INF/content/RentResult.jsp</result>
+            <result>/WEB-INF/content/AdminPage.jsp</result>
+        </action>
+
+        <action name="CheckRefuse" class="com.ccnu.library.action.CheckAction" method="refuse">
+            <result>/WEB-INF/content/AdminPage.jsp</result>
+        </action>
+
+        <action name="RoleAction" class="com.ccnu.library.action.RoleAction">
+            <result name="error">/WEB-INF/content/SelfPage.jsp</result>
+            <result>/WEB-INF/content/AdminPage.jsp</result>
         </action>
 
         <action name="*">

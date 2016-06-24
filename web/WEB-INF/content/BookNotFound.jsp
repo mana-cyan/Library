@@ -1,9 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Book Not Found</title>
+    <title>未找到图书</title>
 </head>
 <body>
-Book Not Found!
+未找到图书!
 </body>
 </html>

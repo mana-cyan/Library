@@ -7,12 +7,8 @@ import com.ccnu.library.data.RequestEntity;
 import com.ccnu.library.data.UserinfoEntity;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
-import java.util.Date;
-import java.util.List;
 
 public class RentAction extends ActionSupport {
 
@@ -27,29 +23,21 @@ public class RentAction extends ActionSupport {
         return fromDate;
     }
 
+    public void setFromDate(String fromDate) {
+        this.fromDate = fromDate;
+    }
+
     public String getToDate() {
         return toDate;
     }
 
-    private void getUserinfo() {
-        HibernateUtils.createSessionFactory();
-        session = HibernateUtils.getSession();
-        ActionContext ctx = ActionContext.getContext();
-
-        String findUser = "from UserinfoEntity where username=:name";
-        Query findUserQuery = session.createQuery(findUser);
-        findUserQuery.setString("name", ctx.getSession().get("user").toString());
-
-        List<UserinfoEntity> userList =  findUserQuery.list();
-        for(UserinfoEntity u : userList)
-        {
-            user.setId(u.getId());
-            user.setUsername(u.getUsername());
-        }
-        session.close();
+    public void setToDate(String toDate) {
+        this.toDate = toDate;
     }
 
-    private void sendRequest() {
+
+
+    private void sendRequest() throws Exception{
 
         HibernateUtils.createSessionFactory();
         session = HibernateUtils.getSession();
@@ -67,13 +55,15 @@ public class RentAction extends ActionSupport {
         session.close();
     }
 
+
     public String execute() throws Exception {
-        user = new UserinfoEntity();
         book = Utils.getBookInfo();
-        this.getUserinfo();
-        ActionContext.getContext().getSession().put("fromDate",getFromDate());
-        //sendRequest();
-        return SUCCESS;
+        user = Utils.getUserinfo();
+        if(book.getStorage() > 0) {
+            sendRequest();
+            return SUCCESS;
+        }
+        return ERROR;
     }
 
 }

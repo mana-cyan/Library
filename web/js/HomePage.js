@@ -37,7 +37,7 @@ function Register(){
     document.body.appendChild(oMask);
     var oRegister=document.createElement("div");
     oRegister.id="login";
-    oRegister.innerHTML="<div class='registerCon'><br><br><br><br><form action='RegisterAction' method='post' id='form1'><input type='text' class='usernameText' name='username'><br><input type='password' class='passwordText' name='password'><br><input type='button' id='btnInnerRegister' class='innerButton' value='зЂВс'></form><div id='close'></div></div>";
+    oRegister.innerHTML="<div class='registerCon'><br><br><br><br><form action='RegisterAction' method='post' id='form1'><input type='text' class='usernameText' name='username'><br><input type='text' class='passwordText' name='password'><br><input type='button' id='btnInnerRegister' class='innerButton' value='зЂВс'></form><div id='close'></div></div>";
     document.body.appendChild(oRegister);
     var oClose=document.getElementById("close");
     var oBtn1=document.getElementById("btnInnerRegister");

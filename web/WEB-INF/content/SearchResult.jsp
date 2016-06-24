@@ -1,5 +1,4 @@
 <%@ page import="com.ccnu.library.data.BookinfoEntity" %>
-<%@ page import="com.opensymphony.xwork2.ActionContext" %>
 <%@ page import="com.ccnu.library.Utils" %>
 <%@ page contentType="text/html;charset=GBK" language="java" %>
 <%@taglib prefix="s" uri="/struts-tags" %>
@@ -14,7 +13,7 @@
     <title>’“µΩÕº È</title>
 </head>
 <body>
-<jsp:include page="/WEB-INF/content/Head.jsp">
+<jsp:include page="/WEB-INF/content/User.jsp">
     <jsp:param name="pageTitle" value="library"/>
 </jsp:include>
 <div class="container">

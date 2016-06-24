@@ -56,8 +56,8 @@ public class  LoginAction implements Action
 
         for(UserinfoEntity user : list) {
             if(user.getPassword().equals(password)){
-                ctx.getSession().put("user" , getUsername());
-                Cookie c = new Cookie("user" , getUsername());
+                ctx.getSession().put("username" , getUsername());
+                Cookie c = new Cookie("username" , getUsername());
                 c.setMaxAge(60 * 60);
                 ServletActionContext.getResponse().addCookie(c);
                 session.close();

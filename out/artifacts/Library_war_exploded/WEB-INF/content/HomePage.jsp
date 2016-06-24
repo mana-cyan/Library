@@ -27,13 +27,13 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="images/explanation-1.png">
+            <img src="images/explanation-1.jpg">
         </div>
         <div class="item">
-            <img src="images/explanation-2.png">
+            <img src="images/explanation-2.jpg">
         </div>
         <div class="item">
-            <img src="images/explanation-3.png">
+            <img src="images/explanation-3.jpg">
         </div>
     </div>
 

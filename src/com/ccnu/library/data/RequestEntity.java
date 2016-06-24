@@ -3,37 +3,45 @@ package com.ccnu.library.data;
 import javax.persistence.*;
 
 /**
- * Created by ikaros on 2016/6/23.
+ * Created by ikaros on 2016/6/24.
  */
 @Entity
 @Table(name = "request", schema = "", catalog = "librarydatabase")
 public class RequestEntity {
-    private Integer bookId;
-    private Integer userId;
+    private int id;
+    private int bookId;
+    private int userId;
     private String fromDate;
     private String toDate;
     private boolean statu;
-    private BookinfoEntity bookinfoByBookId;
-    private UserinfoEntity userinfoByUserId;
-    private int id;
+
+    @Id
+    @Column(name = "ID", nullable = false, insertable = true, updatable = true)
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     @Basic
-    @Column(name = "BookID", nullable = true, insertable = true, updatable = true)
-    public Integer getBookId() {
+    @Column(name = "BookID", nullable = false, insertable = true, updatable = true)
+    public int getBookId() {
         return bookId;
     }
 
-    public void setBookId(Integer bookId) {
+    public void setBookId(int bookId) {
         this.bookId = bookId;
     }
 
     @Basic
-    @Column(name = "UserID", nullable = true, insertable = true, updatable = true)
-    public Integer getUserId() {
+    @Column(name = "UserID", nullable = false, insertable = true, updatable = true)
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -74,52 +82,24 @@ public class RequestEntity {
 
         RequestEntity that = (RequestEntity) o;
 
+        if (bookId != that.bookId) return false;
+        if (id != that.id) return false;
         if (statu != that.statu) return false;
-        if (bookId != null ? !bookId.equals(that.bookId) : that.bookId != null) return false;
+        if (userId != that.userId) return false;
         if (fromDate != null ? !fromDate.equals(that.fromDate) : that.fromDate != null) return false;
         if (toDate != null ? !toDate.equals(that.toDate) : that.toDate != null) return false;
-        if (userId != null ? !userId.equals(that.userId) : that.userId != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = bookId != null ? bookId.hashCode() : 0;
-        result = 31 * result + (userId != null ? userId.hashCode() : 0);
+        int result = id;
+        result = 31 * result + bookId;
+        result = 31 * result + userId;
         result = 31 * result + (fromDate != null ? fromDate.hashCode() : 0);
         result = 31 * result + (toDate != null ? toDate.hashCode() : 0);
         result = 31 * result + (statu ? 1 : 0);
         return result;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "BookID", referencedColumnName = "ID")
-    public BookinfoEntity getBookinfoByBookId() {
-        return bookinfoByBookId;
-    }
-
-    public void setBookinfoByBookId(BookinfoEntity bookinfoByBookId) {
-        this.bookinfoByBookId = bookinfoByBookId;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "UserID", referencedColumnName = "ID")
-    public UserinfoEntity getUserinfoByUserId() {
-        return userinfoByUserId;
-    }
-
-    public void setUserinfoByUserId(UserinfoEntity userinfoByUserId) {
-        this.userinfoByUserId = userinfoByUserId;
-    }
-
-    @Id
-    @Column(name = "ID", nullable = false, insertable = true, updatable = true)
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 }

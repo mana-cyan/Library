@@ -1,10 +1,9 @@
 package com.ccnu.library.data;
 
 import javax.persistence.*;
-import java.util.Collection;
 
 /**
- * Created by ikaros on 2016/6/23.
+ * Created by ikaros on 2016/6/24.
  */
 @Entity
 @Table(name = "bookinfo", schema = "", catalog = "librarydatabase")
@@ -16,7 +15,6 @@ public class BookinfoEntity {
     private String bookPath;
     private Integer storage;
     private String rented;
-    private Collection<RequestEntity> requestsById;
 
     @Id
     @Column(name = "ID", nullable = false, insertable = true, updatable = true)
@@ -116,14 +114,5 @@ public class BookinfoEntity {
         result = 31 * result + (storage != null ? storage.hashCode() : 0);
         result = 31 * result + (rented != null ? rented.hashCode() : 0);
         return result;
-    }
-
-    @OneToMany(mappedBy = "bookinfoByBookId")
-    public Collection<RequestEntity> getRequestsById() {
-        return requestsById;
-    }
-
-    public void setRequestsById(Collection<RequestEntity> requestsById) {
-        this.requestsById = requestsById;
     }
 }

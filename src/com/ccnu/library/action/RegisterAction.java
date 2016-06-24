@@ -37,7 +37,7 @@ public class RegisterAction extends ActionSupport {
     {
         ActionContext ctx = ActionContext.getContext();
         Session session = null;
-        Transaction transaction = null;
+        Transaction transaction;
 
         HibernateUtils.createSessionFactory();
 
@@ -68,7 +68,7 @@ public class RegisterAction extends ActionSupport {
                 session.close();
             }
         }
-        ctx.getSession().put("user",getUsername());
+        ctx.getSession().put("username",getUsername());
         return SUCCESS;
     }
 }
