@@ -15,6 +15,7 @@
 
         <action name="SearchAction" class="com.ccnu.library.action.SearchAction">
             <result name="error">/WEB-INF/content/BookNotFound.jsp</result>
+            <result name="login">/WEB-INF/content/NotLogin.jsp</result>
             <result>/WEB-INF/content/SearchResult.jsp</result>
         </action>
 

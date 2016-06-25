@@ -25,6 +25,10 @@ public class SearchAction extends ActionSupport {
 
         ActionContext ctx = ActionContext.getContext();
 
+        if(null == ctx.getSession().get("username")){
+            return LOGIN;
+        }
+
         HibernateUtils.createSessionFactory();
         Session session = HibernateUtils.getSession();
 

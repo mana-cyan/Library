@@ -3,7 +3,7 @@ package com.ccnu.library.data;
 import javax.persistence.*;
 
 /**
- * Created by ikaros on 2016/6/24.
+ * Created by ikaros on 2016/6/25.
  */
 @Entity
 @Table(name = "userinfo", schema = "", catalog = "librarydatabase")

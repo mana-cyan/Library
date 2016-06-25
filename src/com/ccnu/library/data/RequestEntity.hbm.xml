@@ -20,8 +20,5 @@
         <property name="toDate">
             <column name="ToDate" sql-type="varchar" length="20" not-null="true"/>
         </property>
-        <property name="statu">
-            <column name="Statu" sql-type="bit" not-null="true"/>
-        </property>
     </class>
 </hibernate-mapping>

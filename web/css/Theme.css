@@ -79,58 +79,6 @@
     margin-right: auto;
 }
 
-.tab {
-    position: absolute;
-    background: url("/images/tab.png") no-repeat ;
-    background-size: contain;
-    width: 240px;
-    height: 200px;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-size: 36pt;
-    color: lightgray;
-    z-index: 1;
-}
-
-.bookshelf {
-    display:table;
-    position: relative;
-    width: 1000px;
-    height: 420px;
-    margin-top: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("/images/bookshelf.jpg");
-}
-
-.bookList {
-    width: 90%;
-    height: 80%;
-    position: absolute;
-    margin: 5%;
-    display:table-cell;
-}
-
-.prev {
-    text-align: left;
-    float: left;
-}
-
-.next {
-    text-align: end;
-    float: right;
-}
-
-.book {
-    width: 30%;
-    height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-/*登录框中的text格式*/
 .usernameText{
     width: 210px;
     height: 25px;
@@ -162,7 +110,6 @@
     margin-left: 42%;
 }
 
-/*灰色罩子格式*/
 #mask{
     background: #000000;
     opacity:0.75;
@@ -174,38 +121,38 @@
     top:0;
     z-index:1000;
 }
-/*登录类型*/
+
 #login{
     position:fixed;
     left:25%;
     top:30%;
     z-index:1001;
 }
-/*登录图片类型*/
+
 .loginCon{
     width:670px;
     height:380px;
-    background:url("/images/login.jpg") no-repeat;
+    background:url("../images/login.jpg") no-repeat;
     position:relative;
 }
-/*注册图片类型*/
+
 .registerCon{
     width:670px;
     height:380px;
-    background:url("/images/Regist.jpg") no-repeat;
+    background:url("../images/Regist.jpg") no-repeat;
     position:relative;
 }
-/*hidden的格式*/
+
 #hid{
     width: auto;
     height: auto;
     font-size: 18px;
 }
-/*关闭格式*/
+
 #close{
     width:30px;
     height:30px;
-    background:url("/images/close.png") no-repeat;
+    background:url("../images/close.png") no-repeat;
     cursor:pointer;
     position:absolute;
     right:5px;

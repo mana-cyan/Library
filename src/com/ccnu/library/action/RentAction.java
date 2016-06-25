@@ -5,7 +5,6 @@ import com.ccnu.library.data.BookinfoEntity;
 import com.ccnu.library.data.HibernateUtils;
 import com.ccnu.library.data.RequestEntity;
 import com.ccnu.library.data.UserinfoEntity;
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

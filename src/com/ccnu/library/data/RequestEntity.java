@@ -3,7 +3,7 @@ package com.ccnu.library.data;
 import javax.persistence.*;
 
 /**
- * Created by ikaros on 2016/6/24.
+ * Created by ikaros on 2016/6/25.
  */
 @Entity
 @Table(name = "request", schema = "", catalog = "librarydatabase")
@@ -13,7 +13,6 @@ public class RequestEntity {
     private int userId;
     private String fromDate;
     private String toDate;
-    private boolean statu;
 
     @Id
     @Column(name = "ID", nullable = false, insertable = true, updatable = true)
@@ -65,16 +64,6 @@ public class RequestEntity {
         this.toDate = toDate;
     }
 
-    @Basic
-    @Column(name = "Statu", nullable = false, insertable = true, updatable = true)
-    public boolean isStatu() {
-        return statu;
-    }
-
-    public void setStatu(boolean statu) {
-        this.statu = statu;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -84,7 +73,6 @@ public class RequestEntity {
 
         if (bookId != that.bookId) return false;
         if (id != that.id) return false;
-        if (statu != that.statu) return false;
         if (userId != that.userId) return false;
         if (fromDate != null ? !fromDate.equals(that.fromDate) : that.fromDate != null) return false;
         if (toDate != null ? !toDate.equals(that.toDate) : that.toDate != null) return false;
@@ -99,7 +87,6 @@ public class RequestEntity {
         result = 31 * result + userId;
         result = 31 * result + (fromDate != null ? fromDate.hashCode() : 0);
         result = 31 * result + (toDate != null ? toDate.hashCode() : 0);
-        result = 31 * result + (statu ? 1 : 0);
         return result;
     }
 }
