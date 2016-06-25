@@ -7,26 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a04a0fb4-1aa3-4b85-9bbd-47e189033b4c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/content/NotLogin.jsp" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\Library\web\WEB-INF\content\BookNotAvailable.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\Library\web\images\UpToTop.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\Library\web\images\bookshelf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\Library\web\images\next.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\Library\web\images\prev.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\Library\web\images\tab.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ccnu/library/data/BookinfoEntity.java" afterPath="$PROJECT_DIR$/src/com/ccnu/library/data/BookinfoEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library.iml" afterPath="$PROJECT_DIR$/Library.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LibraryDatabase.sql" afterPath="$PROJECT_DIR$/LibraryDatabase.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ccnu/library/action/RentAction.java" afterPath="$PROJECT_DIR$/src/com/ccnu/library/action/RentAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ccnu/library/data/RequestEntity.hbm.xml" afterPath="$PROJECT_DIR$/src/com/ccnu/library/data/RequestEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ccnu/library/data/RequestEntity.java" afterPath="$PROJECT_DIR$/src/com/ccnu/library/data/RequestEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ccnu/library/action/SearchAction.java" afterPath="$PROJECT_DIR$/src/com/ccnu/library/action/SearchAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/Theme.css" afterPath="$PROJECT_DIR$/web/css/Theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/content/User.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/content/User.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ccnu/library/data/UserinfoEntity.java" afterPath="$PROJECT_DIR$/src/com/ccnu/library/data/UserinfoEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Library/struts.xml" afterPath="$PROJECT_DIR$/out/production/Library/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Library.iws" />
@@ -101,7 +81,7 @@
       <file leaf-file-name="RentAction.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ccnu/library/action/RentAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3575042" vertical-offset="207" max-vertical-offset="1298">
+            <state vertical-scroll-proportion="1.3552189" vertical-offset="207" max-vertical-offset="1298">
               <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
               <folding />
             </state>
@@ -243,7 +223,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -391,6 +370,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -819,7 +799,9 @@
       <workItem from="1466821332517" duration="130000" />
       <workItem from="1466821670049" duration="33000" />
       <workItem from="1466821795575" duration="436000" />
-      <workItem from="1466822261274" duration="50000" />
+      <workItem from="1466822261274" duration="88000" />
+      <workItem from="1466822731893" duration="62000" />
+      <workItem from="1466857706146" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/mana-cyan/Library&#10;">
       <created>1463982803075</created>
@@ -1031,11 +1013,17 @@
       <option name="project" value="LOCAL" />
       <updated>1466792032043</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Merge branch 'master' of https://github.com/mana-cyan/Library&#10;">
+      <created>1466822316461</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1466822316461</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241181000" />
+    <option name="totallyTimeSpent" value="241315000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1059,7 +1047,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1075,7 +1063,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20196672" sideWeight="0.50482315" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20196672" sideWeight="0.49517685" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20196672" sideWeight="0.49517685" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15506808" sideWeight="0.50240386" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1428,14 +1416,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/165ffc16/33b6c859-b8d7-4899-ba2a-c54bb90a6adc/librarydatabase..bookinfo">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="132">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="132">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1487,7 +1475,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ccnu/library/action/RentAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3575042" vertical-offset="207" max-vertical-offset="1298">
+        <state vertical-scroll-proportion="1.3552189" vertical-offset="207" max-vertical-offset="1298">
           <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
           <folding />
         </state>
